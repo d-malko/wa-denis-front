@@ -1,1 +1,2 @@
-import './lesson_3.css';
+import './css/antarctica.css';
+import './css/base.css';

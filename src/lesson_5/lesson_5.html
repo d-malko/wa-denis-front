@@ -1,51 +1,358 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lesson 5</title>
-    <link rel="stylesheet" href="./lesson_5.css">
+    <title>Document</title>
 </head>
-
 <body>
-    <div class="page">
-        <header class="page__header">
-            <ul class="page__menu nav">
-                <li class="nav__item">
-                    <a href="" class="nav__link">
-                        <span class="nav__title">
-                            Home
-                        </span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="" class="nav__link">
-                        <span class="nav__title">
-                            Browse
-                        </span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="" class="nav__link">
-                        <span class="nav__title">
-                            Community
-                        </span>
-                    </a>
-                </li>
-            </ul>
-            <h3 class="logo">
-                <span class="logo__thin">good</span>reads
-            </h3>
-            <div class="user-info">
-                her will be user
-        </header>
-        <main class="main">
-            <div class="main__content">HERE WILKL BE MAIN CONTENT</div>
-            <aside class="main__sidebar">HERE WILL BE SIDEBAR</aside>
-        </main>
-    </div>
-</body>
+<div class="page">
+    <header class="page__header">
+        <ul class="page__menu nav">
+            <li class="nav__item">
+                <a href="" class="nav__link">
+                    <span class="nav__title">
+                        Home
+                    </span>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">
+                    <span class="nav__title">
+                        Browse
+                    </span>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">
+                    <span class="nav__title">
+                        Community
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <h3 class="logo">
+            <span class="logo__thin">good</span>reads
+        </h3>
+        <ul class="user-info">
+            <li class="user-info__item">
+                <a href="" class="user-info__link">
+                    <span class="user-info__image">
+                        <img src="images/search.png" alt="">
+                    </span>
+                    <span class="user-info__image">
+                        <img src="images/bell.jpg" alt="">
+                    </span>
+                    <span class="user-info__image">
+                        <img class="round-img" src="https://picsum.photos/id/237/200/300" alt="">
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </header>
 
+
+    <main class="main">
+        <div class="main__content">
+            <div class="book">
+                <div class="book-img__box">
+                    <div class="book-img">
+                        <img src="https://picsum.photos/id/1/200/300" alt="">
+                    </div>
+                    <div class="book-img__status">
+                        <h4 class="book-img__status__text">Active</h4>
+                    </div>
+                </div>
+                <div class="book-description">
+                    <div class="book-description__main">
+                        <h3 class="book-description__header">The Lean Startup</h3>
+                        <h4 class="book-description__subheader text-small">How Today's Entrepreneurs Use Continuous
+                            Innovation to Create Radically Successful Businesses</h4>
+                        <div class="book-description__author">by Eric Ries</div>
+                        <div class="book-description__rating">
+
+                        </div>
+                        <p class="book-description__full">Most startups fail. But many of those failures are
+                            preventable.
+                            The Lean Startup is a new approach being adopted across the globe, changing the way
+                            companies
+                            are built and new products are launched.
+                            <span style="margin: 10px"><br></span>
+                            Eric Ries defines a startup as an organization dedicated to creating something new under
+                            conditions of extreme uncertainty. This is just as true for one person in a garage or…
+                        </p>
+                        <a href="" class="book-description__readmore url-orange">Read more</a>
+                    </div>
+                    <div class="book-description__about">Hardcover, 299 pages <br>Published September 13th 2011 by Crown
+                        Business (first published January 1st 2011)
+                    </div>
+
+                </div>
+            </div>
+            <div class="reviews-box">
+                <div class="reviews">
+                    <!--                    Todo: what better use in this case h4?-->
+                    <h4 class="reviews__header">Friends reviews <span>(6)</span></h4>
+
+                    <div class="review__box">
+                        <div class="review">
+                            <div class="review__avatar">
+                                <img class="review__avatar__image" src="https://picsum.photos/id/237/200/300" alt="">
+                            </div>
+                            <div class="review__content">
+                                <div class="review__header">
+                                    <div class="review__header__name"><span>Verna Hicks </span>rated it</div>
+                                    <div class="review__header__rating">*****</div>
+                                </div>
+                                <div class="review__buttons">
+                                    <a href="" class="review___buttons__like">Like</a>
+                                    <span>&#183;</span>
+                                    <a href="" class="review___buttons__comment">Comment</a>
+                                </div>
+                            </div>
+                            <div class="review__date">
+                                <span class="">Mar 23, 2017</span>
+                            </div>
+                        </div>
+                        <div class="review review__child">
+                            <div class="review__avatar">
+                                <img class="review__avatar__image" src="https://picsum.photos/id/237/200/300" alt="">
+                            </div>
+                            <div class="review__content">
+                                <div class="review__header">
+                                    <div class="review__header__name"><span>Verna Hicks </span>rated it</div>
+                                    <div class="review__header__rating">*****</div>
+                                </div>
+                                <div class="review__buttons">
+                                    <a href="" class="review___buttons__like">Like</a>
+                                    <span>&#183;</span>
+                                    <a href="" class="review___buttons__comment">Comment</a>
+                                </div>
+                            </div>
+                            <div class="review__date">
+                                <span class="">Mar 23, 2017</span>
+                            </div>
+                        </div>
+                        <div class="review review__child review__comment">
+                            <div class="review__avatar">
+                                <img class="review__avatar__image" src="https://picsum.photos/id/237/200/300" alt="">
+                            </div>
+                            <input class="review__input" type="text" placeholder="Write a comment">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lists-books__box">
+                <div class="lists-books__header"></div>
+                <div class="lists-books">
+                    <h4 class="lists-books__header">
+                        Lists with this book
+                    </h4>
+                    <div class="lists-books__item">
+                        <div class="lists-books__item__main">
+                                <span class="lists-books__item__header">
+                                    Entrepreneurs' Book Club Reading List
+                                </span>
+                            <span class="lists-books__item__counter">
+                                    1st out of 271 books
+                                </span>
+                        </div>
+                        <div class="lists-books__item__votes">
+                            <span>1,125 votes</span>
+                        </div>
+
+                    </div>
+                    <div class="lists-books__item">
+                        <div class="lists-books__item__main">
+                                <span class="lists-books__item__header">
+                                    Entrepreneurs' Book Club Reading List
+                                </span>
+                            <span class="lists-books__item__counter">
+                                    1st out of 271 books
+                                </span>
+                        </div>
+                        <div class="lists-books__item__votes">
+                            <span>1,125 votes</span>
+                        </div>
+
+                    </div>
+                    <div class="lists-books__item">
+                        <div class="lists-books__item__main">
+                                <span class="lists-books__item__header">
+                                    Entrepreneurs' Book Club Reading List
+                                </span>
+                            <span class="lists-books__item__counter">
+                                    1st out of 271 books
+                                </span>
+                        </div>
+                        <div class="lists-books__item__votes">
+                            <span>1,125 votes</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="reviews">
+                <!--                    Todo: Is span better use in this case h4 ?-->
+                <h4 class="reviews__header">Friends reviews <span>(6)</span></h4>
+                <div class="review__box">
+                    <div class="review">
+                        <div class="review__avatar">
+                            <img class="review__avatar__image" src="https://picsum.photos/id/237/200/300" alt="">
+                        </div>
+                        <div class="review__content">
+                            <div class="review__header">
+                                <div class="review__header__name"><span>Verna Hicks </span>rated it</div>
+                                <div class="review__header__rating">*****</div>
+                            </div>
+                            <div class="review__buttons">
+                                <a href="" class="review___buttons__like">Like</a>
+                                <span>&#183;</span>
+                                <a href="" class="review___buttons__comment">Comment</a>
+                            </div>
+                        </div>
+                        <div class="review__date">
+                            <span class="">Mar 23, 2017</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__avatar">
+                            <img class="review__avatar__image" src="https://picsum.photos/id/237/200/300" alt="">
+                        </div>
+                        <div class="review__content">
+                            <div class="review__header">
+                                <div class="review__header__name"><span>Verna Hicks </span>rated it</div>
+                                <div class="review__header__rating">*****</div>
+                            </div>
+                            <div class="review__buttons">
+                                <a href="" class="review___buttons__like">Like</a>
+                                <span>&#183;</span>
+                                <a href="" class="review___buttons__comment">Comment</a>
+                            </div>
+                        </div>
+                        <div class="review__date">
+                            <span class="">Mar 23, 2017</span>
+                        </div>
+                    </div>
+                    <div class="review review__child">
+                        <div class="review__avatar">
+                            <img class="review__avatar__image" src="https://picsum.photos/id/237/200/300" alt="">
+                        </div>
+                        <div class="review__content">
+                            <div class="review__header">
+                                <div class="review__header__name"><span>Verna Hicks </span>rated it</div>
+                                <div class="review__header__rating">*****</div>
+                            </div>
+                            <div class="review__buttons">
+                                <a href="" class="review___buttons__like">Like</a>
+                                <span>&#183;</span>
+                                <a href="" class="review___buttons__comment">Comment</a>
+                            </div>
+                        </div>
+                        <div class="review__date">
+                            <span class="">Mar 23, 2017</span>
+                        </div>
+                    </div>
+                    <div class="review review__child review__comment">
+                        <div class="review__avatar">
+                            <img class="review__avatar__image" src="https://picsum.photos/id/237/200/300" alt="">
+                        </div>
+                        <input class="review__input" type="text" placeholder="Write a comment">
+                    </div>
+                    <div class="review">
+                        <div class="review__avatar">
+                            <img class="review__avatar__image" src="https://picsum.photos/id/237/200/300" alt="">
+                        </div>
+                        <div class="review__content">
+                            <div class="review__header">
+                                <div class="review__header__name"><span>Verna Hicks </span>rated it</div>
+                                <div class="review__header__rating">*****</div>
+                            </div>
+                            <div class="review__buttons">
+                                <a href="" class="review___buttons__like">Like</a>
+                                <span>&#183;</span>
+                                <a href="" class="review___buttons__comment">Comment</a>
+                            </div>
+                        </div>
+                        <div class="review__date">
+                            <span class="">Mar 23, 2017</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__loadmore">
+                    Load more
+                </div>
+            </div>
+        </div>
+
+
+        <aside class="main__sidebar">
+            <div class="sidebar-toprated">
+                <h4 class="sidebar-toprated__header">
+                    Readers also enjoyed
+                </h4>
+                <div class="sidebar-img-box">
+                    <img src="images/9266037.jpg" alt="">
+                    <img src="images/16033602.jpg" alt="">
+                    <img src="images/9266037.jpg" alt="">
+                </div>
+            </div>
+            <div class="sidebar-books-by-author">
+                <h4 class="sidebar-books-by-author__header">
+                    Books by Eric Ries
+                </h4>
+                <div class="sidebar-img-box">
+                    <img src="images/9266037.jpg" alt="">
+                    <img src="images/16033602.jpg" alt="">
+                    <img src="images/9266037.jpg" alt="">
+                    <img src="images/16033602.jpg" alt="">
+
+                </div>
+                <a href="" class="url-orange">View more</a>
+            </div>
+            <div class="sidebar-sponsored">
+                <h4 class="sidebar-sponsored__header">Sponsored books</h4>
+                <div class="sidebar-sponsored__item">
+                    <div class="sidebar-sponsored__item__image">
+                        <img src="images/16033602.jpg" alt="">
+                    </div>
+                    <div class="sidebar-sponsored__item__description">
+                        <div class="sidebar-sponsored__item__header">Finding Mr. Brightside</div>
+                        <div class="sidebar-sponsored__item__about">"I have rarely rooted for anyone--fictional or
+                            real--more than I rooted for Abram and Juliette." -- JERRY SPINELLI, author of STARGIRL
+                        </div>
+                        <div class="sidebar-sponsored__item__link url-orange">www.amazon.com</div>
+                    </div>
+                </div>
+                <div class="sidebar-sponsored__item">
+                    <div class="sidebar-sponsored__item__image">
+                        <img src="images/16033602.jpg" alt="">
+                    </div>
+                    <div class="sidebar-sponsored__item__description">
+                        <div class="sidebar-sponsored__item__header">Finding Mr. Brightside</div>
+                        <div class="sidebar-sponsored__item__about">"I have rarely rooted for anyone--fictional or
+                            real--more than I rooted for Abram and Juliette." -- JERRY SPINELLI, author of STARGIRL
+                        </div>
+                        <div class="sidebar-sponsored__item__link url-orange">www.amazon.com</div>
+                    </div>
+                </div>
+                <div class="sidebar-sponsored__item">
+                    <div class="sidebar-sponsored__item__image">
+                        <img src="images/16033602.jpg" alt="">
+                    </div>
+                    <div class="sidebar-sponsored__item__description">
+                        <div class="sidebar-sponsored__item__header">Finding Mr. Brightside</div>
+                        <div class="sidebar-sponsored__item__about">"I have rarely rooted for anyone--fictional or
+                            real--more than I rooted for Abram and Juliette." -- JERRY SPINELLI, author of STARGIRL
+                        </div>
+                        <div class="sidebar-sponsored__item__link url-orange">www.amazon.com</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+</div>
+</body>
 </html>

@@ -1,0 +1,404 @@
+.page {
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: #ffffff;
+}
+.logo {
+    color: #231f20;
+}
+.logo__thin {
+    font-weight: 200;
+}
+
+.page__header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 90px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.page__menu {
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.main {
+    display: flex;
+    min-height: calc(100vh - 90px);
+    margin-top: 54px;
+    justify-content: space-between;
+}
+
+.main__content {
+    width: 70%;
+    flex-basis: 70%;
+}
+
+.main__sidebar {
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    flex-basis: 25%;
+
+
+}
+
+.nav   {
+    display: flex;
+}
+
+.nav__item {
+    margin-right: 30px;
+    display: flex;
+
+}
+
+.nav__link {
+    width: 100%;
+    flex-basis: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.nav__title {
+    font-family: Avenir;
+    font-size: 14px;
+    font-weight: 500;
+    color: #231f20;
+}
+
+.user-info {
+    display: flex;
+}
+
+.user-info__item {
+    margin-right: 30px;
+    display: flex;
+
+}
+
+.user-info__link {
+    width: 100%;
+    flex-basis: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.user-info__image img{
+    max-width: 32px;
+    flex-basis: 32px;
+    margin: 0 10px;
+}
+.round-img {
+    border-radius: 50%
+}
+.book {
+    display: flex;
+}
+.book-img__box {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    flex-basis: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.book-img__status {
+    display: flex;
+    min-height: 43px;
+    width: 80%;
+    border-radius: 100px;
+    background-color: #ededed;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.book-img__status__text {
+    font-family: Avenir-Roman;
+    font-size: 14px;
+    color: #777274;
+}
+
+ .book-description {
+     width: 70%;
+     flex-basis: 70%;
+     margin-left: 40px;
+ }
+.book-description__readmore.url-orange{
+    margin: 10px 0;
+    display: block;
+}
+.book-description__main {
+    border-bottom: 1px solid #d1d1d1;
+}
+
+ .book-description__header {
+     font-family: Avenir;
+     font-size: 36px;
+     font-weight: 500;
+     color: #231f20;
+ }
+
+ .book-description__subheader {
+     font-family: Avenir;
+     font-size: 19px;
+     color: #231f20;
+ }
+
+.book-description__author {
+    font-family: Avenir;
+    font-size: 16px;
+    color: #777274;
+    margin: 15px 0;
+}
+
+.book-description__full {
+    font-family: Avenir;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.57;
+    color: #231f20;
+}
+
+.url-orange {
+    font-family: Avenir;
+    font-size: 14px;
+    color: #fc9951;
+    text-decoration: underline;
+}
+
+.book-description__about {
+    font-family: Avenir;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #777274;
+    margin-top: 10px;
+}
+
+.reviews {
+    margin-top: 60px;
+}
+.reviews__header {
+    font-family: Avenir;
+    font-size: 18px;
+    font-weight: 900;
+    color: #231f20;
+}
+ .reviews-box {
+     margin-top: 63px;
+     /*display: flex;*/
+ }
+
+ .reviews_friend-reviews {
+     border: 1px solid green;
+ }
+
+.review {
+    display: flex;
+    margin-top: 20px;
+ }
+
+.review__child {
+    margin-left: 70px;
+    background: #f3f3f3;
+    margin-top: 0;
+}
+
+.review__input {
+    font-family: Avenir;
+    font-size: 14px;
+    color: #777274;
+    min-height: 36px;
+    width: 100%;
+    margin: 20px;
+}
+.review__content {
+    display: flex;
+    width: 80%;
+    flex-basis: 80%;
+    flex-direction: column;
+/*    TODO: ask how to do without change direction*/
+}
+.review__avatar__image {
+    max-width: 60px;
+    max-height: 60px;
+    flex-basis: 60px;
+    flex-shrink: 0;
+    border-radius: 50%
+/*    TODO: flex shrink not for main direction*/
+}
+.review__header {
+    display: flex;
+    align-items: center;
+
+}
+.review__header__name {
+    margin-right: 2px;
+    font-family: Avenir;
+    font-size: 14px;
+    color: #231f20;
+}
+
+.review__header__rateit {
+    margin: 5px;
+    font-weight: 500;
+/*    TODO: why not working font-weight*/
+}
+
+.review__header__rating {
+}
+
+/*TODO: why I can't use parent class to change font
+   I need to use child class review___buttons__like*/
+.review___buttons {
+    font-family: Avenir;
+    font-size: 14px;
+    color: #777274;
+}
+
+.review___buttons__like {
+    font-family: Avenir;
+    font-size: 14px;
+    color: #777274;
+}
+
+.review___buttons__comment {
+    font-family: Avenir;
+    font-size: 14px;
+    color: #777274;
+}
+
+
+.review__date {
+    width: 20%;
+    flex-basis: 20%;
+    display: flex;
+    align-content: end;
+    text-align: end;
+    /*    why not working align-items*/
+    font-family: Avenir;
+    font-size: 14px;
+    color: #777274;
+}
+.review__child .review__date {
+    width: 20%;
+    flex-basis: 20%;
+}
+
+.lists-books {
+    margin-top: 60px;
+}
+.lists-books__item {
+    display: flex;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 20px 0;
+}
+.lists-books__item__main {
+    display: flex;
+    width: 90%;
+    flex-basis: 90%;
+    flex-direction: column;
+}
+
+.lists-books__header {
+    font-family: Avenir;
+    font-size: 18px;
+    font-weight: 900;
+    color: #231f20;
+}
+
+.lists-books__item__header {
+    font-family: Avenir;
+    font-size: 16px;
+    color: #231f20;
+}
+
+.lists-books__item__votes {
+}
+/*TODO: same as with comments how to move text to end*/
+
+.sidebar-toprated {
+    margin-bottom: 48px;
+}
+.sidebar-toprated img {
+    max-width: 112px;
+    flex-basis: 112px;
+}
+
+.sidebar-toprated__header {
+    margin-bottom: 14px;
+}
+
+.sidebar-books-by-author {
+    margin-bottom: 48px;
+}
+.sidebar-books-by-author img {
+    max-width: 77px;
+    flex-basis: 77px;
+}
+
+.sidebar-books-by-author__header {
+    margin-bottom: 14px;
+}
+
+.sidebar-sponsored {
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+.sidebar-sponsored__header {
+    margin-bottom: 20px;
+}
+.sidebar-sponsored__item {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+ }
+
+.sidebar-sponsored__item__image img {
+    max-width: 50px;
+}
+
+.sidebar-sponsored__item__description {
+    margin-left: 15px;
+}
+.sidebar-sponsored__item__header {
+    font-family: Avenir;
+    font-size: 18px;
+    font-weight: 900;
+    color: #231f20;
+    margin-bottom: 5px;
+}
+
+.sidebar-sponsored__item__about {
+    font-family: Avenir;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #231f20;
+    margin: 5px 0;
+}
+
+.reviews__loadmore {
+    border-radius: 4px;
+    background-color: #f3f3f3;
+    text-align: center;
+    font-family: Avenir;
+    font-size: 16px;
+    color: #777274;
+    padding: 13px 0;
+}

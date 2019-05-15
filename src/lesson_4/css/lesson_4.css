@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Montserrat Regular;
+    src: url("../../lesson_3/fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: Montserrat Bold;
+    src: url("../../lesson_3/fonts/Montserrat-Bold.ttf");
+}
+
+
+.page {
+    font-family: "Montserrat Regular";
+    width: 800px;
+    height: 600px;
+    background: #308af3;
+    border: 1px solid green;
+    margin: auto;
+
+
+}
+.pricing-box {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+.pricing {
+    height: calc(100% - 60px);
+    position: relative;
+    margin: 30px;
+    text-align: center;
+    background: #f5fafd;
+    border-radius: 6px;
+
+}
+.pricing-box__header {
+    padding-top: 30px;
+    background: #ffffff;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.pricing-box__header-text {
+    padding-top: 30px;
+    font-family: "Montserrat Bold";
+    font-size: 20.9px;
+    line-height: 1;
+    color: #242f40;
+
+}
+.pricing-box__paragraph {
+    width: 50%;
+    margin: auto;
+
+    padding-top: 30px;
+    color: #5b6b82;
+}
+.cards {
+    display: inline-block;
+    position: absolute;
+    top: 70%;
+    margin: auto;
+    width: 100%;
+    font-size: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);;
+}
+.card {
+    position: relative;
+    display: inline-block;
+    box-sizing: content-box;
+    font-size: 10px;
+    font-family: Monospaced;
+    width: calc(25% - 22px);
+    padding-top: 20px;
+    height: 250px;
+    background: #ffffff;
+    box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.1);
+}
+.card-price__dollar {
+    font-size: 15.1px;
+    color: #242f40;
+}
+.card-price__number {
+    font-family: "Montserrat Bold";
+    font-size: 34.9px;
+    color: #242f40;
+}
+.card-price__monthly {
+    font-size: 9.3px;
+    color: #5b6b82;
+}
+.card img {
+    display: block;
+    background: inherit;
+}
+.card ul {
+    list-style-type: none;
+}
+.card-list {
+    position: absolute;
+    display: inline-block;
+    width: 60%;
+    top: 30%;
+    /*left: 10%;*/
+    margin: auto;
+    transform: translate(-50%, 70%);
+}
+.card:hover {
+    background: white;
+    border: 1px solid #3ccf8e;
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    z-index: 1;
+}
+
+.card:hover .btn-signup {
+    position: absolute;
+    background: #3ccf8e;
+    border: 1px solid #3ccf8e;
+}
+.card:hover .btn-signup a {
+    color: white;
+}
+
+
+.btn-signup {
+    font-family: "Montserrat Regular";
+    font-size: 8.1px;
+    position: absolute;
+    margin: auto;
+    width: 70%;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    border: 1px solid #5b6b82 ;
+    border-radius: 2.3px;
+    color: #5b6b82;
+    padding: 5px;
+
+}
+.btn-signup a {
+    color: #5b6b82;
+    text-decoration: none;
+}
+.check-img {
+    display: block;
+    width: 20px;
+}

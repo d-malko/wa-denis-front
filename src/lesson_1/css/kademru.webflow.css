@@ -1,0 +1,153 @@
+.path {
+  font-size: 12px;
+}
+
+ol li{
+  display: inline;
+}
+
+.pathlink {
+  color: #c00;
+}
+
+.pathlink:hover {
+  color: #ff3b3b;
+  text-decoration: none;
+}
+
+.h1 {
+  margin-right: 15px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  color: #c52324;
+  font-size: 38px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.rphotoblock {
+  display: block;
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.rphotoblock a {color:#c52324;}
+
+.rphotonewlable {
+  position: absolute;
+  display: block;
+  width: 86px;
+  height: 77px;
+  margin-top: -1px;
+  margin-left: 415px;
+}
+
+.rphotoplusico {
+  position: absolute;
+  width: 40px;
+  height: 36px;
+  margin-top: 298px;
+  margin-left: 460px;
+}
+
+.ringredients {
+  margin-top: 15px;
+}
+
+
+.rstitle {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  background-color: #c52324;
+  color: #fff;
+  font-size: 20px;
+}
+
+.ringlist {
+  margin-top: 3px;
+  padding: 3px 10px;
+  font-size: 15px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.ringlist:hover {
+  background-color: #f3f1e5;
+}
+
+.rtext {
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.rclnewrecipe {
+  width: 240px;
+  text-align: left;
+}
+
+.rcltitle {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #c52324;
+  font-size: 20px;
+}
+
+.rcltnewrlink {
+  display: block;
+  overflow: hidden;
+  width: 240px;
+  height: 88px;
+  padding-top: 5px;
+  color: #c52324;
+  font-size: 16px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.rcltnewrlink:hover {
+  opacity: 0.85;
+}
+
+.rclnewrimg {
+  margin-right: 3px;
+  float: left;
+  width:117px;
+  height:78px;
+  background:#F3F3F3;
+  border-radius:2px;
+}
+
+.rclnewrimg:hover {
+  border-color: #c52324;
+}
+
+.rclnewrtext {
+  overflow: hidden;
+  max-height: 58px;
+  margin-top: 3px;
+}
+
+.rclnewrstars {
+  width: 81px;
+  border-bottom: 1px dotted #969696;
+}
+
+.rclnewrlable {
+  position: absolute;
+  display: block;
+  width: 47px;
+  margin-top: -1px;
+  margin-left: 71px;
+}
+
+.rphotoblockimg {
+  width:500px;
+  height:335px;
+  background:#F3F3F3;
+}
