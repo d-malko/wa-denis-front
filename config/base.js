@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const baseConf = () => {
   const entry = {
     index: ['./src/index/index.js'],
-    lesson_1: ['./src/lesson_2/lesson_1.js'],
+    lesson_1: ['./src/lesson_1/lesson_1.js'],
     lesson_3: ['./src/lesson_3/lesson_3.js'],
     lesson_4: ['./src/lesson_4/lesson_4.js'],
     lesson_5: ['./src/lesson_5/lesson_5.js'],
