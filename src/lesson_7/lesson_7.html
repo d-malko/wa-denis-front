@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 7</title>
+</head>
+
+<body>
+<div class="page">
+    <header class="page__header">
+        <div class="nav" id="nav">
+            <div class="logo"><a href=""><img src="img/logo.svg" alt=""></a></div>
+            <button class="nav__btn">
+                <span></span></button>
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="" class="nav__link">
+                        <span class="nav__title">
+                            Wie funktionierts?
+                        </span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">
+                        <span class="nav__title">
+                            Testpartner werden
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <div class="section section_primary"></div>
+    <!--    <main class="main">-->
+    <!--        <div class="main__content">HERE WILKL BE MAIN CONTENT</div>-->
+    <!--        <aside class="main__sidebar">HERE WILL BE SIDEBAR</aside>-->
+    <!--    </main>-->
+</div>
+</body>
+<script>
+    const nav = document.querySelector('#nav');
+    const btn = nav.querySelector('button');
+    btn.addEventListener('click', () => {
+        nav.classList.toggle('nav_opened');
+    })
+</script>
+
+</html>

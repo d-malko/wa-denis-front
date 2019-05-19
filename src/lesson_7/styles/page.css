@@ -1,0 +1,20 @@
+.page {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+.page__header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border: none;
+}
+
+@media screen and (max-width: 992px) {
+    .page {
+        width: 100%;
+    }
+}

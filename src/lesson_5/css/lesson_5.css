@@ -241,7 +241,6 @@
     flex-basis: 60px;
     flex-shrink: 0;
     border-radius: 50%
-/*    TODO: flex shrink not for main direction*/
 }
 .review__header {
     display: flex;
@@ -257,7 +256,7 @@
 
 .review__header__rateit {
     margin: 5px;
-    font-weight: 500;
+    font-weight: 600;
 /*    TODO: why not working font-weight*/
 }
 
@@ -267,15 +266,19 @@
 /*TODO: why I can't use parent class to change font
    I need to use child class review___buttons__like*/
 .review___buttons {
-    font-family: Avenir;
+    font-family: 'Avenir';
     font-size: 14px;
     color: #777274;
 }
 
+a {
+    font-size: 1rem;
+}
+
 .review___buttons__like {
-    font-family: Avenir;
     font-size: 14px;
     color: #777274;
+    color: red;
 }
 
 .review___buttons__comment {

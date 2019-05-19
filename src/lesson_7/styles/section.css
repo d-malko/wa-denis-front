@@ -1,0 +1,10 @@
+.section {
+    padding: 72px 10px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section_primary {
+    background: #f5b050;
+}

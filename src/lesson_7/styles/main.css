@@ -1,0 +1,15 @@
+
+.main {
+    display: flex;
+    /*padding-top: 50px;*/
+    /*min-height: calc(100vh - 90px);*/
+}
+
+.main__content {
+    width: 70%;
+    flex-basis: 70%;
+}
+
+.main__sidebar {
+    flex-grow: 1;
+}
