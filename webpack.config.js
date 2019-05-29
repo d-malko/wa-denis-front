@@ -11,17 +11,6 @@ const _path = __dirname;
 
 let config = baseConfig(_path);
 
-if (env === "development") {
-    config = devConfig(config, path.normalize(path.join(_path, "/build")));
-}
-
-if (env === "production") {
-    config = prodConfig(config, path.normalize(path.join(_path + "/build")));
-}
-
-if (env === "publish") {
-  config = prodConfig(config, _path + "/docs");
-}
-
+config = prodConfig(config, path.normalize(path.join(_path + "/build")));
 
 module.exports = config;
