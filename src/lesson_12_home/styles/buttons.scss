@@ -1,0 +1,29 @@
+@import "styles/mixins";
+
+.buttons-panel {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+
+  .block {
+    .bulb {
+      width: 180px;
+      height: 60px;
+      border: 2px solid black;
+      border-radius: 10px;
+
+      &.active {
+        background: chartreuse;
+      }
+    }
+
+    & button {
+      width: 80px;
+      height: 20px;
+      border: 2px solid black;
+      border-radius: 5px;
+      margin: 10px 0
+    }
+  }
+}

@@ -20,7 +20,7 @@ function switcher(block, all = false) {
 }
 
 switcher(document.querySelector('.buttons-panel'));
-document.getElementById('disable-all').onclick = function () {
+document.getElementById('btn-disable-all').onclick = function () {
     switcher(document.querySelector('.buttons-panel'), true);
 };
 
