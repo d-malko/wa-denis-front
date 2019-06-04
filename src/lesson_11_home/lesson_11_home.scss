@@ -1,0 +1,41 @@
+.street {
+  display: flex;
+  justify-content: space-around;
+
+  .trafficlight {
+    border: 2px solid black;
+    width: 100px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+    .light {
+      border: 2px solid black;
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+
+      &-red {
+        &.active {
+          background: red;
+        }
+      }
+
+      &-yellow {
+        &.active {
+          background: yellow;
+        }
+      }
+
+      &-green {
+        &.active {
+          background: green;
+        }
+      }
+
+    }
+
+  }
+}

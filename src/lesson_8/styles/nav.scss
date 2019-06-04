@@ -1,0 +1,264 @@
+@import './mixins';
+@import './media';
+
+.nav {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  @include laptop {
+    height: 70px;
+    background: white;
+    width: 100%;
+  }
+
+  &__logo {
+    @include absoluteCenter;
+    width: 90px;
+    height: 100px;
+    padding: 20px;
+    margin-top: 9px;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    @include laptop {
+      display: none;
+    }
+
+    &_mobile {
+      display: none;
+      @include laptop {
+        display: inherit;
+        @include absoluteCenter;
+        width: 36px;
+        height: 50px;
+        & > img {
+          width: 100%; // TODO always forgetting
+        }
+      }
+    }
+    & > img {
+      width: 100%; // TODO always forgetting
+    }
+  }
+
+  &__menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1024px;
+    height: 100%;
+    width: auto;
+    background: white;
+    @include laptop {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: start;
+      //top: 100%;
+      width: 100%;
+      height: auto;
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transition: opacity 0.5s;
+      pointer-events: none;
+      z-index: 1;
+      padding-bottom: 25px;
+      padding-top: 20px;
+      font-size: 15px;
+    }
+    & > * {
+      flex: 20% 1 1;;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    font-size: 1rem;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    display: none;
+    width: 30px;
+    height: 24px;
+    @include laptop {
+      display: inherit;
+      transition: all 0.3s;
+      z-index: 2; // TODO how to do without z-index
+    }
+
+    &:before {
+      content: '';
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background-color: black;
+      display: block;
+      position: absolute;
+      transition: all 0.3s;
+    }
+
+    & > span {
+      display: block;
+      @include absoluteCenter;
+      background-color: black;
+      height: 3px;
+      width: 100%;
+      transition: opacity 0.3s;
+    }
+
+    &:after {
+      content: '';
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background-color: black;
+      display: block;
+      position: absolute;
+      transition: all 0.3s;
+    }
+  }
+
+
+  &__item {
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    @include laptop {
+      width: 100%;
+      padding-left: 86px;
+      justify-content: flex-start;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #15484c;
+    font-weight: bold;
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: #f5b050;
+    }
+  }
+
+  &_opened {
+    @include laptop {
+      box-shadow: none;
+    }
+
+    .nav__menu {
+      @include laptop {
+        transform: scaleY(1);
+        box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.24);
+        visibility: visible;
+        opacity: 1;
+        pointer-events: inherit;
+      }
+    }
+
+    & > .nav__btn {
+      &:before {
+        @include laptop {
+          top: 50%;
+          transform: translateY(-50%) rotate(-45deg);
+        }
+
+      }
+
+      &:after {
+        @include laptop {
+          top: 50%;
+          transform: translateY(-50%) rotate(45deg);
+        }
+
+      }
+
+      & > span {
+        @include laptop {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    }
+  }
+
+  &__item span {
+    @include laptop {
+      width: 100%;
+      margin-left: 5%;
+    }
+
+  }
+
+
+}
+
+/* For Ipad*/
+//@media screen and (max-width: 992px) {
+//    .nav {
+//        //width: 100%;
+//
+//
+//        &__menu {
+//            //display: flex;
+//            //position: absolute;
+//            //flex-direction: column;
+//            //justify-content: space-around;
+//            //text-align: start;
+//            //top: 100%;
+//            //width: 100%;
+//            //visibility: hidden;
+//            //opacity: 0;
+//            //-webkit-transition: opacity 0.5s;
+//            //
+//            //pointer-events: none;
+//            //z-index: 1;
+//        }
+//
+//        &_opened {
+//            box-shadow: none;
+//
+//            .nav__menu {
+//                transform: scaleY(1);
+//                box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.24);
+//                visibility: visible;
+//                opacity: 1;
+//                pointer-events: inherit;
+//            }
+//
+//            & > .nav__btn{
+//                &:before {
+//                    top: 50%;
+//                    transform: translateY(-50%) rotate(-45deg);
+//                }
+//                &:after{
+//                    top: 50%;
+//                    transform: translateY(-50%) rotate(45deg);
+//                }
+//
+//                & > span {
+//                    opacity: 0;
+//                    visibility: hidden;
+//                }
+//            }
+//        }
+//
+//        &__item span {
+//            width: 100%;
+//            margin-left: 5%;
+//        }
+//    }
+//
+//
+//
+//}

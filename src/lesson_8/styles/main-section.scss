@@ -1,0 +1,44 @@
+.main-section {
+  padding: 147px 10px;
+  background-image: url("../../../assets/images/background-empty.jpg");
+  position: relative;
+  background-color: #e2eded;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  background-position: top center;
+  &__content-wrapper {
+    max-width: 2300px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+  &__content {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  &__central-image {
+    position: absolute;
+    width: 40%;
+    top: 0;
+    right: 15%;
+
+  }
+  &__square {
+    width: 275px !important;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    z-index: 0 !important;
+  }
+  &__phone {
+    transform: translate(7%, 16%);
+    width: 100%;
+    right: 0;
+    position: absolute;
+  }
+  //&__
+}

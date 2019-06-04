@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 7</title>
+</head>
+
+<body>
+<div class="page">
+    <header class="page__header">
+        <div class="nav" id="nav">
+            <a class="nav__logo_mobile" href="">
+                <img src="images/logo.png" alt="">
+            </a>
+            <button class="nav__btn">
+                <span></span></button>
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="" class="nav__link">
+                        <span class="nav__title">
+                            So funktioniert's
+                        </span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">
+                        <span class="nav__title">
+                            Unser Sortiment
+                        </span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__logo" href="">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">
+                        <span class="nav__title">
+                            Unsere App
+                        </span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">
+                        <span class="nav__title">
+                            Häufige Fragen
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+    </header>
+    <section class="main-section">
+        <div class="main-section__content-wrapper">
+            <div class="main-section__content">
+                <div class="main-section__description"></div>
+                <div class="main-section__central-image">
+                    <img src="../../assets/images/square-green-204x300.png" alt="" class="main-section__square">
+                    <img src="../../assets/images/phone_top@2x.png" alt="" class="main-section__phone">
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+<script>
+    const nav = document.querySelector('#nav');
+    const btn = nav.querySelector('button');
+    btn.addEventListener('click', () => {
+        nav.classList.toggle('nav_opened');
+    })
+</script>
+
+</html>

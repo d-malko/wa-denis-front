@@ -1,0 +1,20 @@
+@import "varibles";
+
+
+
+.page {
+  max-width: $pageMaxWidth;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: 0 auto;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border: none;
+  }
+
+}

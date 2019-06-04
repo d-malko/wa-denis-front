@@ -1,0 +1,19 @@
+.btn {
+  background-color: #efefef;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  padding: 7px 25px;
+  box-shadow: 0 5px 9px 0 #00000040;
+  outline: none;
+  &_active {
+    background-color: green;
+    border-color: green;
+    color: #fff;
+  }
+}
+
+.header {
+  &_active {
+    color: red;
+  }
+}
