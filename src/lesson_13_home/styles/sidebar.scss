@@ -1,0 +1,6 @@
+@import "accordion";
+
+.sidebar {
+  width: 30%;
+  @include accordion;
+}

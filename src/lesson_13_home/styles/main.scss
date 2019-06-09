@@ -1,0 +1,6 @@
+@import "accordion";
+
+.main {
+  width: 70%;
+  @include accordion;
+}

@@ -31,5 +31,8 @@
   ],
   "lesson_12_home": [
     "./src/lesson_12_home/lesson_12_home.js"
+  ],
+  "lesson_13_home": [
+    "./src/lesson_13_home/lesson_13_home.js"
   ]
 }
