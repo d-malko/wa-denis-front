@@ -1,10 +1,11 @@
 import { CommentList} from "./commentList";
 
 export  class Comment {
-    constructor(rootElement = document.querySelector('body'), data) {
+    constructor(rootElement = document.querySelector('body'), data, func) {
         this.rootElement = rootElement;
         this.data = data;
         this.covered = false;
+        this.func = func;
     }
     render() {
         this.message = document.createElement('li');
@@ -35,11 +36,13 @@ export  class Comment {
 
         this.commentDeleter.addEventListener('click', () => {
             this.deleteComment(this.data.id);
-            console.log(this.data.id);
         });
     }
 
     deleteComment(id) {
-        this.rootElement.removeChild(this.rootElement.childNodes[id]);
+        this.func(id);
+        console.log(this.func);
+        console.log('deleted id' + id);
+        // this.rootElement.removeChild(this.rootElement.childNodes[this.data.id]);
     }
 }

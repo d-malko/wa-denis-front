@@ -40,5 +40,8 @@
   ],
   "lesson_15_homework": [
     "./src/lesson_15_homework/lesson_15_homework.js"
+  ],
+  "lesson_17_homework": [
+    "./src/lesson_17_homework/lesson_17_homework.js"
   ]
 }
